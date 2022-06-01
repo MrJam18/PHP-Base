@@ -1,0 +1,189 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+}
+.tasks__header {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.table__headers {
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+    border-collapse: collapse;
+    height: 50px;
+    white-space: nowrap;
+}
+
+.table__rows {
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+    border-collapse: collapse;
+    height: 30px;
+}
+.table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+
+}
+.table-container {
+    width: 70%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    min-width: 777px;
+}
+.table__divider {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: black;
+
+
+}
+
+.table__row {
+    border-bottom: 1px solid #c7c7c7;
+    padding: 4px 8px;
+}
+.table__header {
+    border-bottom: 1px solid #c7c7c7;
+    padding: 4px 8px;
+}
+.table__cellContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.table__clickableRow {
+    cursor: pointer;
+    transition: background-color 0.13s ease-in;
+}
+.table__clickableRow:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+}
+.table__clickableRow:active {
+    background-color: rgba(19, 119, 220, 0.4);
+}
+.table__emptyText {
+    height: auto;
+    margin: 15px 0;
+}
+.tasks__addButton {
+    align-self: end;
+    color: black;
+    text-decoration: none;
+    background-color: #b7f4a0;
+    border-radius: 7px;
+    border: none;
+    padding: 5px 10px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgb(34 60 80 / 20%);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgb(34 60 80 / .2);
+    cursor: pointer;
+}
+.modal__backStart{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: rgba(87, 87, 87, 0.5);
+    flex-grow: 1;
+}
+.modal__back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: rgba(87, 87, 87, 0.5);
+    flex-grow: 1;
+    animation-duration: 0.3s;
+    animation-name: slowShow;
+}
+
+.modal__contentBox {
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 30px;
+    width: 400px;
+    min-height: 200px;
+    margin-top: 75px;
+}
+.modal__closingButton {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    cursor: pointer;
+}
+.modal__xmark {
+    position: absolute;
+    right: -19px;
+    bottom: -6px;
+    font-size: 19px;
+}
+.modal__fixed {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.modal__headerHolder {
+    width: 100%;
+    position: absolute;
+    top: -22%;
+    right: 36%;
+}
+.tasks__input {
+    background-color: #f1f3f5;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgb(34 60 80 / 20%);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgb(34 60 80 / .2);
+    outline: none;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+.tasks__input:focus {
+    border-color: aqua;
+}
+.tasks__radiogroup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tasks__small-label {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tasks__small-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.small-input-container {
+    width: 45%;
+}
+.tasks__small-input {
+    line-height: 20px;
+}
+.done-button {
+    width: 26px;
+}
